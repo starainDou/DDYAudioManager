@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4413AE420E6122D00A41152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413ADD20E6122C00A41152 /* AppDelegate.m */; };
+		A4413AE520E6122D00A41152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4413ADE20E6122C00A41152 /* LaunchScreen.storyboard */; };
+		A4413AE620E6122D00A41152 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4413AE020E6122C00A41152 /* Info.plist */; };
+		A4413AE720E6122D00A41152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AE120E6122C00A41152 /* main.m */; };
+		A4413AE820E6122D00A41152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AE320E6122C00A41152 /* ViewController.m */; };
+		A4413AFB20E627A500A41152 /* DDYAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AF820E627A500A41152 /* DDYAuthorityManager.m */; };
+		A4413AFC20E627A500A41152 /* NSTimer+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */; };
+		A4413AFF20E63CA500A41152 /* DDYAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AFE20E63CA500A41152 /* DDYAudioTool.m */; };
+		A4413B3D20EB5EFC00A41152 /* DDYAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413B3C20EB5EFC00A41152 /* DDYAudioRecorder.m */; };
+		A4413B4120EB766B00A41152 /* DDYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413B4020EB766B00A41152 /* DDYAudioPlayer.m */; };
+		A4413B6B20EB788F00A41152 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4413B4520EB788E00A41152 /* amrFileCodec.mm */; };
+		A4413B6C20EB788F00A41152 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4413B4720EB788E00A41152 /* libopencore-amrnb.a */; };
+		A4413B6D20EB788F00A41152 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4413B4820EB788E00A41152 /* libopencore-amrwb.a */; };
+		A4413B6E20EB788F00A41152 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5020EB788E00A41152 /* VoiceConverter.mm */; };
+		A4413B6F20EB788F00A41152 /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5220EB788F00A41152 /* AAFilter.cpp */; };
+		A4413B7020EB788F00A41152 /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5420EB788F00A41152 /* BPMDetect.cpp */; };
+		A4413B7120EB788F00A41152 /* cpu_detect_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5720EB788F00A41152 /* cpu_detect_x86.cpp */; };
+		A4413B7220EB788F00A41152 /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5820EB788F00A41152 /* FIFOSampleBuffer.cpp */; };
+		A4413B7320EB788F00A41152 /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5B20EB788F00A41152 /* FIRFilter.cpp */; };
+		A4413B7420EB788F00A41152 /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5D20EB788F00A41152 /* mmx_optimized.cpp */; };
+		A4413B7520EB788F00A41152 /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B5E20EB788F00A41152 /* PeakFinder.cpp */; };
+		A4413B7620EB788F00A41152 /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B6020EB788F00A41152 /* RateTransposer.cpp */; };
+		A4413B7720EB788F00A41152 /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B6220EB788F00A41152 /* SoundTouch.cpp */; };
+		A4413B7820EB788F00A41152 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B6520EB788F00A41152 /* sse_optimized.cpp */; };
+		A4413B7920EB788F00A41152 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B6720EB788F00A41152 /* TDStretch.cpp */; };
+		A4413B7A20EB788F00A41152 /* WaveHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4413B6920EB788F00A41152 /* WaveHeader.cpp */; };
+		A4413B7E20EB81D900A41152 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4413B7C20EB81D900A41152 /* libmp3lame.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A4413AC520E6117F00A41152 /* DDYAudioManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDYAudioManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4413ADC20E6122C00A41152 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4413ADD20E6122C00A41152 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4413ADF20E6122C00A41152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4413AE020E6122C00A41152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4413AE120E6122C00A41152 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4413AE220E6122C00A41152 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A4413AE320E6122C00A41152 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A4413AF720E627A500A41152 /* DDYAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYAuthorityManager.h; sourceTree = "<group>"; };
+		A4413AF820E627A500A41152 /* DDYAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYAuthorityManager.m; sourceTree = "<group>"; };
+		A4413AF920E627A500A41152 /* NSTimer+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+DDYExtension.h"; sourceTree = "<group>"; };
+		A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DDYExtension.m"; sourceTree = "<group>"; };
+		A4413AFD20E63CA500A41152 /* DDYAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYAudioTool.h; sourceTree = "<group>"; };
+		A4413AFE20E63CA500A41152 /* DDYAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYAudioTool.m; sourceTree = "<group>"; };
+		A4413B3B20EB5EFC00A41152 /* DDYAudioRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYAudioRecorder.h; sourceTree = "<group>"; };
+		A4413B3C20EB5EFC00A41152 /* DDYAudioRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYAudioRecorder.m; sourceTree = "<group>"; };
+		A4413B3F20EB766B00A41152 /* DDYAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYAudioPlayer.h; sourceTree = "<group>"; };
+		A4413B4020EB766B00A41152 /* DDYAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYAudioPlayer.m; sourceTree = "<group>"; };
+		A4413B4420EB788E00A41152 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		A4413B4520EB788E00A41152 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		A4413B4720EB788E00A41152 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		A4413B4820EB788E00A41152 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		A4413B4A20EB788E00A41152 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		A4413B4B20EB788E00A41152 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		A4413B4D20EB788E00A41152 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		A4413B4E20EB788E00A41152 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		A4413B4F20EB788E00A41152 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		A4413B5020EB788E00A41152 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		A4413B5220EB788F00A41152 /* AAFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AAFilter.cpp; sourceTree = "<group>"; };
+		A4413B5320EB788F00A41152 /* AAFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAFilter.h; sourceTree = "<group>"; };
+		A4413B5420EB788F00A41152 /* BPMDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPMDetect.cpp; sourceTree = "<group>"; };
+		A4413B5520EB788F00A41152 /* BPMDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMDetect.h; sourceTree = "<group>"; };
+		A4413B5620EB788F00A41152 /* cpu_detect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_detect.h; sourceTree = "<group>"; };
+		A4413B5720EB788F00A41152 /* cpu_detect_x86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpu_detect_x86.cpp; sourceTree = "<group>"; };
+		A4413B5820EB788F00A41152 /* FIFOSampleBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIFOSampleBuffer.cpp; sourceTree = "<group>"; };
+		A4413B5920EB788F00A41152 /* FIFOSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSampleBuffer.h; sourceTree = "<group>"; };
+		A4413B5A20EB788F00A41152 /* FIFOSamplePipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIFOSamplePipe.h; sourceTree = "<group>"; };
+		A4413B5B20EB788F00A41152 /* FIRFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIRFilter.cpp; sourceTree = "<group>"; };
+		A4413B5C20EB788F00A41152 /* FIRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRFilter.h; sourceTree = "<group>"; };
+		A4413B5D20EB788F00A41152 /* mmx_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mmx_optimized.cpp; sourceTree = "<group>"; };
+		A4413B5E20EB788F00A41152 /* PeakFinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeakFinder.cpp; sourceTree = "<group>"; };
+		A4413B5F20EB788F00A41152 /* PeakFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakFinder.h; sourceTree = "<group>"; };
+		A4413B6020EB788F00A41152 /* RateTransposer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RateTransposer.cpp; sourceTree = "<group>"; };
+		A4413B6120EB788F00A41152 /* RateTransposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateTransposer.h; sourceTree = "<group>"; };
+		A4413B6220EB788F00A41152 /* SoundTouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundTouch.cpp; sourceTree = "<group>"; };
+		A4413B6320EB788F00A41152 /* SoundTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTouch.h; sourceTree = "<group>"; };
+		A4413B6420EB788F00A41152 /* soundtouch_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundtouch_config.h; sourceTree = "<group>"; };
+		A4413B6520EB788F00A41152 /* sse_optimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sse_optimized.cpp; sourceTree = "<group>"; };
+		A4413B6620EB788F00A41152 /* STTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTypes.h; sourceTree = "<group>"; };
+		A4413B6720EB788F00A41152 /* TDStretch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TDStretch.cpp; sourceTree = "<group>"; };
+		A4413B6820EB788F00A41152 /* TDStretch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDStretch.h; sourceTree = "<group>"; };
+		A4413B6920EB788F00A41152 /* WaveHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveHeader.cpp; sourceTree = "<group>"; };
+		A4413B6A20EB788F00A41152 /* WaveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveHeader.h; sourceTree = "<group>"; };
+		A4413B7C20EB81D900A41152 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		A4413B7D20EB81D900A41152 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4413AC220E6117F00A41152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4413B7E20EB81D900A41152 /* libmp3lame.a in Frameworks */,
+				A4413B6D20EB788F00A41152 /* libopencore-amrwb.a in Frameworks */,
+				A4413B6C20EB788F00A41152 /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4413ABC20E6117F00A41152 = {
+			isa = PBXGroup;
+			children = (
+				A4413AC720E6117F00A41152 /* DDYAudioManager */,
+				A4413AC620E6117F00A41152 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4413AC620E6117F00A41152 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4413AC520E6117F00A41152 /* DDYAudioManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4413AC720E6117F00A41152 /* DDYAudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B7B20EB81C500A41152 /* Lame */,
+				A4413B5120EB788F00A41152 /* SoundTouch */,
+				A4413B4220EB788E00A41152 /* VoiceConvert */,
+				A4413AF620E627A500A41152 /* DDYAuthorityManager */,
+				A4413AE920E6134400A41152 /* DDYAudioManager */,
+				A4413ADB20E6122C00A41152 /* System */,
+			);
+			path = DDYAudioManager;
+			sourceTree = "<group>";
+		};
+		A4413ADB20E6122C00A41152 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				A4413ADC20E6122C00A41152 /* AppDelegate.h */,
+				A4413ADD20E6122C00A41152 /* AppDelegate.m */,
+				A4413ADE20E6122C00A41152 /* LaunchScreen.storyboard */,
+				A4413AE020E6122C00A41152 /* Info.plist */,
+				A4413AE120E6122C00A41152 /* main.m */,
+				A4413AE220E6122C00A41152 /* ViewController.h */,
+				A4413AE320E6122C00A41152 /* ViewController.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		A4413AE920E6134400A41152 /* DDYAudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4413AFD20E63CA500A41152 /* DDYAudioTool.h */,
+				A4413AFE20E63CA500A41152 /* DDYAudioTool.m */,
+				A4413B3F20EB766B00A41152 /* DDYAudioPlayer.h */,
+				A4413B4020EB766B00A41152 /* DDYAudioPlayer.m */,
+				A4413B3B20EB5EFC00A41152 /* DDYAudioRecorder.h */,
+				A4413B3C20EB5EFC00A41152 /* DDYAudioRecorder.m */,
+			);
+			path = DDYAudioManager;
+			sourceTree = "<group>";
+		};
+		A4413AF620E627A500A41152 /* DDYAuthorityManager */ = {
+			isa = PBXGroup;
+			children = (
+				A4413AF720E627A500A41152 /* DDYAuthorityManager.h */,
+				A4413AF820E627A500A41152 /* DDYAuthorityManager.m */,
+				A4413AF920E627A500A41152 /* NSTimer+DDYExtension.h */,
+				A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */,
+			);
+			path = DDYAuthorityManager;
+			sourceTree = "<group>";
+		};
+		A4413B4220EB788E00A41152 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B4320EB788E00A41152 /* amrwapper */,
+				A4413B4620EB788E00A41152 /* lib */,
+				A4413B4920EB788E00A41152 /* opencore-amrnb */,
+				A4413B4C20EB788E00A41152 /* opencore-amrwb */,
+				A4413B4F20EB788E00A41152 /* VoiceConverter.h */,
+				A4413B5020EB788E00A41152 /* VoiceConverter.mm */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		A4413B4320EB788E00A41152 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B4420EB788E00A41152 /* amrFileCodec.h */,
+				A4413B4520EB788E00A41152 /* amrFileCodec.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		A4413B4620EB788E00A41152 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B4720EB788E00A41152 /* libopencore-amrnb.a */,
+				A4413B4820EB788E00A41152 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A4413B4920EB788E00A41152 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B4A20EB788E00A41152 /* interf_dec.h */,
+				A4413B4B20EB788E00A41152 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		A4413B4C20EB788E00A41152 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B4D20EB788E00A41152 /* dec_if.h */,
+				A4413B4E20EB788E00A41152 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		A4413B5120EB788F00A41152 /* SoundTouch */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B5220EB788F00A41152 /* AAFilter.cpp */,
+				A4413B5320EB788F00A41152 /* AAFilter.h */,
+				A4413B5420EB788F00A41152 /* BPMDetect.cpp */,
+				A4413B5520EB788F00A41152 /* BPMDetect.h */,
+				A4413B5620EB788F00A41152 /* cpu_detect.h */,
+				A4413B5720EB788F00A41152 /* cpu_detect_x86.cpp */,
+				A4413B5820EB788F00A41152 /* FIFOSampleBuffer.cpp */,
+				A4413B5920EB788F00A41152 /* FIFOSampleBuffer.h */,
+				A4413B5A20EB788F00A41152 /* FIFOSamplePipe.h */,
+				A4413B5B20EB788F00A41152 /* FIRFilter.cpp */,
+				A4413B5C20EB788F00A41152 /* FIRFilter.h */,
+				A4413B5D20EB788F00A41152 /* mmx_optimized.cpp */,
+				A4413B5E20EB788F00A41152 /* PeakFinder.cpp */,
+				A4413B5F20EB788F00A41152 /* PeakFinder.h */,
+				A4413B6020EB788F00A41152 /* RateTransposer.cpp */,
+				A4413B6120EB788F00A41152 /* RateTransposer.h */,
+				A4413B6220EB788F00A41152 /* SoundTouch.cpp */,
+				A4413B6320EB788F00A41152 /* SoundTouch.h */,
+				A4413B6420EB788F00A41152 /* soundtouch_config.h */,
+				A4413B6520EB788F00A41152 /* sse_optimized.cpp */,
+				A4413B6620EB788F00A41152 /* STTypes.h */,
+				A4413B6720EB788F00A41152 /* TDStretch.cpp */,
+				A4413B6820EB788F00A41152 /* TDStretch.h */,
+				A4413B6920EB788F00A41152 /* WaveHeader.cpp */,
+				A4413B6A20EB788F00A41152 /* WaveHeader.h */,
+			);
+			path = SoundTouch;
+			sourceTree = "<group>";
+		};
+		A4413B7B20EB81C500A41152 /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				A4413B7D20EB81D900A41152 /* lame.h */,
+				A4413B7C20EB81D900A41152 /* libmp3lame.a */,
+			);
+			path = Lame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4413AC420E6117F00A41152 /* DDYAudioManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4413AD820E6118E00A41152 /* Build configuration list for PBXNativeTarget "DDYAudioManager" */;
+			buildPhases = (
+				A4413AC120E6117F00A41152 /* Sources */,
+				A4413AC220E6117F00A41152 /* Frameworks */,
+				A4413AC320E6117F00A41152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDYAudioManager;
+			productName = DDYAudioManager;
+			productReference = A4413AC520E6117F00A41152 /* DDYAudioManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4413ABD20E6117F00A41152 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.smartmesh;
+				TargetAttributes = {
+					A4413AC420E6117F00A41152 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A4413AC020E6117F00A41152 /* Build configuration list for PBXProject "DDYAudioManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4413ABC20E6117F00A41152;
+			productRefGroup = A4413AC620E6117F00A41152 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4413AC420E6117F00A41152 /* DDYAudioManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4413AC320E6117F00A41152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4413AE620E6122D00A41152 /* Info.plist in Resources */,
+				A4413AE520E6122D00A41152 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4413AC120E6117F00A41152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4413AE820E6122D00A41152 /* ViewController.m in Sources */,
+				A4413AFB20E627A500A41152 /* DDYAuthorityManager.m in Sources */,
+				A4413AFF20E63CA500A41152 /* DDYAudioTool.m in Sources */,
+				A4413B7320EB788F00A41152 /* FIRFilter.cpp in Sources */,
+				A4413B4120EB766B00A41152 /* DDYAudioPlayer.m in Sources */,
+				A4413AFC20E627A500A41152 /* NSTimer+DDYExtension.m in Sources */,
+				A4413B6E20EB788F00A41152 /* VoiceConverter.mm in Sources */,
+				A4413B7020EB788F00A41152 /* BPMDetect.cpp in Sources */,
+				A4413B7920EB788F00A41152 /* TDStretch.cpp in Sources */,
+				A4413B7420EB788F00A41152 /* mmx_optimized.cpp in Sources */,
+				A4413B7720EB788F00A41152 /* SoundTouch.cpp in Sources */,
+				A4413AE720E6122D00A41152 /* main.m in Sources */,
+				A4413B6B20EB788F00A41152 /* amrFileCodec.mm in Sources */,
+				A4413B7520EB788F00A41152 /* PeakFinder.cpp in Sources */,
+				A4413B7820EB788F00A41152 /* sse_optimized.cpp in Sources */,
+				A4413B7120EB788F00A41152 /* cpu_detect_x86.cpp in Sources */,
+				A4413B6F20EB788F00A41152 /* AAFilter.cpp in Sources */,
+				A4413B7A20EB788F00A41152 /* WaveHeader.cpp in Sources */,
+				A4413B7220EB788F00A41152 /* FIFOSampleBuffer.cpp in Sources */,
+				A4413AE420E6122D00A41152 /* AppDelegate.m in Sources */,
+				A4413B7620EB788F00A41152 /* RateTransposer.cpp in Sources */,
+				A4413B3D20EB5EFC00A41152 /* DDYAudioRecorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4413ADE20E6122C00A41152 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4413ADF20E6122C00A41152 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4413AD620E6118E00A41152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4413AD720E6118E00A41152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4413AD920E6118E00A41152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYAudioManager/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDYAudioManager/VoiceConvert/lib",
+					"$(PROJECT_DIR)/DDYAudioManager/Lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4413ADA20E6118E00A41152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYAudioManager/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDYAudioManager/VoiceConvert/lib",
+					"$(PROJECT_DIR)/DDYAudioManager/Lame",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4413AC020E6117F00A41152 /* Build configuration list for PBXProject "DDYAudioManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4413AD620E6118E00A41152 /* Debug */,
+				A4413AD720E6118E00A41152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4413AD820E6118E00A41152 /* Build configuration list for PBXNativeTarget "DDYAudioManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4413AD920E6118E00A41152 /* Debug */,
+				A4413ADA20E6118E00A41152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4413ABD20E6117F00A41152 /* Project object */;
+}
