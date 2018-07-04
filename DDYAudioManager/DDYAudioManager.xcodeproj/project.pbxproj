@@ -92,6 +92,7 @@
 		A4413B6A20EB788F00A41152 /* WaveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveHeader.h; sourceTree = "<group>"; };
 		A4413B7C20EB81D900A41152 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		A4413B7D20EB81D900A41152 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		A49C20E020EC7CDB00ADE09D /* 耳返.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "耳返.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +148,7 @@
 				A4413AE120E6122C00A41152 /* main.m */,
 				A4413AE220E6122C00A41152 /* ViewController.h */,
 				A4413AE320E6122C00A41152 /* ViewController.m */,
+				A49C20E020EC7CDB00ADE09D /* 耳返.md */,
 			);
 			path = System;
 			sourceTree = "<group>";
