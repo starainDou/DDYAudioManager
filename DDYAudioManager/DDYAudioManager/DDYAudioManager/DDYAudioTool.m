@@ -54,7 +54,7 @@
     [[AVAudioSession sharedInstance] overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:nil];
 }
 
-#pragma mark 音量值转化
+#pragma mark 分贝值转化
 + (CGFloat)audioPowerLevelsChange:(CGFloat)orignalPower {
     double aveChannel = pow(10, (ALPHA * orignalPower));
     if (aveChannel <= 0.05f) aveChannel = 0.05f;
@@ -62,7 +62,8 @@
     return aveChannel;
 }
 
-+ (int)ddy_ConvertPcmToMp3:(NSString *)pcmPath cafSampleRate:(CGFloat)sampleRate mp3SavePath:(NSString *)mp3Path;{
+#pragma mark PCM(wav、caf)转MP3
++ (void)ddy_ConvertPcmToMp3:(NSString *)pcmPath sampleRate:(CGFloat)sampleRate mp3SavePath:(NSString *)mp3Path {
 
     @try {
         int read, write;
@@ -98,8 +99,9 @@
     }
 }
 
-+ (NSString *)mp3ToBase64String:(NSString *)mp3Path {
-    NSData *mp3Data = [NSData dataWithContentsOfFile:mp3Path];
+#pragma mark 音频转Base64字符串
++ (NSString *)ddy_ConvertToBase64String:(NSString *)path {
+    NSData *mp3Data = [NSData dataWithContentsOfFile:path];
     NSString *base64Str = [mp3Data base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return base64Str;
 }
@@ -125,19 +127,37 @@
     // 初始化一个封面
     MPMediaItemArtwork *albumArt = [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"img1"]];
     // 设置封面
-    [ songInfo setObject:albumArt forKey:MPMediaItemPropertyArtwork ];
+    [songInfo setObject:albumArt forKey:MPMediaItemPropertyArtwork];
     // 设置标题
-    [ songInfo setObject:@"追梦人" forKey:MPMediaItemPropertyTitle ];
+    [songInfo setObject:@"追梦人" forKey:MPMediaItemPropertyTitle];
     // 设置作者
-    [ songInfo setObject:@"作者" forKey:MPMediaItemPropertyArtist ];
+    [songInfo setObject:@"作者" forKey:MPMediaItemPropertyArtist];
     // 设置专辑
-    [ songInfo setObject:@"唱片集" forKey:MPMediaItemPropertyAlbumTitle ];
+    [songInfo setObject:@"唱片集" forKey:MPMediaItemPropertyAlbumTitle];
     // 流派
     [songInfo setObject:@"流派" forKey:MPMediaItemPropertyGenre];
     // 设置总时长
     [songInfo setObject:@"10.2" forKey:MPMediaItemPropertyPlaybackDuration];
     // 设置
-    [ [MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songInfo];
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:songInfo];
+}
+
+#pragma mark 播放音效
+void soundCompleteCallback(SystemSoundID soundID, void *clientData) { }
+
++ (void)ddy_palySoundWithName:(NSString *)soundName {
+    NSString *audioFile = [[NSBundle mainBundle] pathForResource:soundName ofType:nil];
+    NSURL *fileUrl = [NSURL fileURLWithPath:audioFile];
+    SystemSoundID soundID = 0;
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileUrl), &soundID);
+    AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, soundCompleteCallback, NULL);
+    AudioServicesPlaySystemSound(soundID);
+}
+
+#pragma mark 震动
++ (void)ddy_Vibrate {
+    // AudioServicesPlaySystemSound(1007);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 - (void)dealloc {
