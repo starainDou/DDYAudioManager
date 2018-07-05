@@ -13,7 +13,6 @@
 		A4413AE720E6122D00A41152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AE120E6122C00A41152 /* main.m */; };
 		A4413AE820E6122D00A41152 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AE320E6122C00A41152 /* ViewController.m */; };
 		A4413AFB20E627A500A41152 /* DDYAuthorityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AF820E627A500A41152 /* DDYAuthorityManager.m */; };
-		A4413AFC20E627A500A41152 /* NSTimer+DDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */; };
 		A4413AFF20E63CA500A41152 /* DDYAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413AFE20E63CA500A41152 /* DDYAudioTool.m */; };
 		A4413B3D20EB5EFC00A41152 /* DDYAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413B3C20EB5EFC00A41152 /* DDYAudioRecorder.m */; };
 		A4413B4120EB766B00A41152 /* DDYAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4413B4020EB766B00A41152 /* DDYAudioPlayer.m */; };
@@ -47,8 +46,6 @@
 		A4413AE320E6122C00A41152 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A4413AF720E627A500A41152 /* DDYAuthorityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYAuthorityManager.h; sourceTree = "<group>"; };
 		A4413AF820E627A500A41152 /* DDYAuthorityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYAuthorityManager.m; sourceTree = "<group>"; };
-		A4413AF920E627A500A41152 /* NSTimer+DDYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+DDYExtension.h"; sourceTree = "<group>"; };
-		A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+DDYExtension.m"; sourceTree = "<group>"; };
 		A4413AFD20E63CA500A41152 /* DDYAudioTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYAudioTool.h; sourceTree = "<group>"; };
 		A4413AFE20E63CA500A41152 /* DDYAudioTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYAudioTool.m; sourceTree = "<group>"; };
 		A4413B3B20EB5EFC00A41152 /* DDYAudioRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYAudioRecorder.h; sourceTree = "<group>"; };
@@ -171,8 +168,6 @@
 			children = (
 				A4413AF720E627A500A41152 /* DDYAuthorityManager.h */,
 				A4413AF820E627A500A41152 /* DDYAuthorityManager.m */,
-				A4413AF920E627A500A41152 /* NSTimer+DDYExtension.h */,
-				A4413AFA20E627A500A41152 /* NSTimer+DDYExtension.m */,
 			);
 			path = DDYAuthorityManager;
 			sourceTree = "<group>";
@@ -341,7 +336,6 @@
 				A4413AFF20E63CA500A41152 /* DDYAudioTool.m in Sources */,
 				A4413B7320EB788F00A41152 /* FIRFilter.cpp in Sources */,
 				A4413B4120EB766B00A41152 /* DDYAudioPlayer.m in Sources */,
-				A4413AFC20E627A500A41152 /* NSTimer+DDYExtension.m in Sources */,
 				A4413B6E20EB788F00A41152 /* VoiceConverter.mm in Sources */,
 				A4413B7020EB788F00A41152 /* BPMDetect.cpp in Sources */,
 				A4413B7920EB788F00A41152 /* TDStretch.cpp in Sources */,
